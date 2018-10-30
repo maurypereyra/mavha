@@ -1,5 +1,6 @@
 package com.interview.technical.mavha.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -9,6 +10,7 @@ import java.io.Serializable;
 
 @Data
 @Entity
+@Builder
 public class Person implements Serializable {
     @Id
     @Min(value=1, message = "entity.person.id.lessThanMin")
